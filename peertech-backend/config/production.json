@@ -1,0 +1,6 @@
+{
+    "mongoURI": "your_production_mongodb_connection_string",
+    "jwtSecret": "your_production_jwt_secret",
+    "emailUser": "your_production_email@example.com",
+    "emailPass": "your_production_email_password"
+  }
