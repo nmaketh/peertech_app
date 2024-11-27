@@ -1,13 +1,145 @@
 {
+  "name": "peertech-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "@sendgrid/mail": "^8.1.4",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
+    "config": "^3.3.12",
     "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "express-session": "^1.18.1",
-    "jsonwebtoken": "^9.0.2"
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "nodemailer": "^6.9.16",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
   }
 }
+```
+
+### Deploying on Render
+
+#### Backend Deployment
+
+1. **Create a New Web Service**:
+   - Go to the Render dashboard.
+   - Click on the "New" button and select "Web Service".
+   - Connect your GitHub repository containing the backend code.
+   - Fill in the necessary details such as the name, region, and branch.
+   - Set the build and start commands:
+     - Build Command: `npm install`
+     - Start Command: `npm start`
+
+2. **Set Environment Variables**:
+   - Add the necessary environment variables for your backend application.
+
+#### Frontend Deployment
+
+1. **Create a New Static Site**:
+   - Go to the Render dashboard.
+   - Click on the "New" button and select "Static Site".
+   - Connect your GitHub repository containing the frontend code.
+   - Fill in the necessary details such as the name, region, and branch.
+   - Set the build and publish directories:
+     - Build Command: `npm run build`
+     - Publish Directory: `build`
+
+2. **Set Environment Variables**:
+   - Add the necessary environment variables for your frontend application.
+
+### Summary
+
+1. **Correct the Start Command**: Ensure that the start command in your Render service is correctly set to `gunicorn` for Python applications or `node` for Node.js applications.
+2. **Verify Your `package.json`**: Ensure that your `package.json` file has the correct scripts and dependencies.
+3. **Deploy on Render**:
+   - Create a new web service for the backend and set the build and start commands.
+   - Create a new static site for the frontend and set the build and publish directories.
+   - Set the necessary environment variables for both backend and frontend applications.
+
+By following these steps, you should be able to deploy both your backend and frontend applications on Render. If you encounter any issues, please let me know!{
+  "name": "peertech-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "config": "^3.3.12",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "nodemailer": "^6.9.16",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
+  }
+}
+`
+
+### Deploying on Render
+
+#### Backend Deployment
+
+1. **Create a New Web Service**:
+   - Go to the Render dashboard.
+   - Click on the "New" button and select "Web Service".
+   - Connect your GitHub repository containing the backend code.
+   - Fill in the necessary details such as the name, region, and branch.
+   - Set the build and start commands:
+     - Build Command: `npm install`
+     - Start Command: `npm start`
+
+2. **Set Environment Variables**:
+   - Add the necessary environment variables for your backend application.
+
+#### Frontend Deployment
+
+1. **Create a New Static Site**:
+   - Go to the Render dashboard.
+   - Click on the "New" button and select "Static Site".
+   - Connect your GitHub repository containing the frontend code.
+   - Fill in the necessary details such as the name, region, and branch.
+   - Set the build and publish directories:
+     - Build Command: `npm run build`
+     - Publish Directory: `build`
+
+2. **Set Environment Variables**:
+   - Add the necessary environment variables for your frontend application.
+
+### Summary
+
+1. **Correct the Start Command**: Ensure that the start command in your Render service is correctly set to `gunicorn` for Python applications or `node` for Node.js applications.
+2. **Verify Your `package.json`**: Ensure that your `package.json` file has the correct scripts and dependencies.
+3. **Deploy on Render**:
+   - Create a new web service for the backend and set the build and start commands.
+   - Create a new static site for the frontend and set the build and publish directories.
+   - Set the necessary environment variables for both backend and frontend applications.
+
+By following these steps, you should be able to deploy both your backend and frontend applications on Render. If you encounter any issues, please let me know!
