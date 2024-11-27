@@ -1,6 +1,6 @@
-{
-    "mongoURI": "your_production_mongodb_connection_string",
-    "jwtSecret": "your_production_jwt_secret",
-    "emailUser": "your_production_email@example.com",
-    "emailPass": "your_production_email_password"
-  }
+MONGO_URI=mongodb+srv://TechEd:OHZSkqd8GxEa2Ctz@cluster0.bj5vni4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+SESSION_SECRET=your_secret_key
+JWT_SECRET=e2727462a3879d378c45d1228b63a637c93d0775f7f9b7375856147fc5a5df55c474651ea4b94f2af1fc0495604155627db51884b9dcdd04ae858dedc789e0db
+EMAIL_USER=n.riak@alustudent.com
+EMAIL_PASS=your_email_password
+NODE_ENV=development
